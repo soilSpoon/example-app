@@ -25,10 +25,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $parameters->set(Option::SKIP, []);
 
-    $parameters->set(Option::PATHS, [__DIR__ . '/app']);
+    $parameters->set(Option::PATHS, [__DIR__ . '/app/Providers']);
 
     $parameters->set(Option::BOOTSTRAP_FILES, [
-        __DIR__ . '/bootstrap/app.php',
+        __DIR__ . '/rector-bootstrap.php',
     ]);
 
     $parameters->set(Option::PHPSTAN_FOR_RECTOR_PATH, getcwd() . '/phpstan.neon');
