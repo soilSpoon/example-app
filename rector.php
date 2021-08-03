@@ -25,7 +25,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $parameters->set(Option::SKIP, []);
 
-    $parameters->set(Option::PATHS, [__DIR__ . '/app/Providers']);
+    $parameters->set(Option::PATHS, [__DIR__ . '/app']);
 
     $parameters->set(Option::BOOTSTRAP_FILES, [
         __DIR__ . '/rector-bootstrap.php',
