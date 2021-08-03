@@ -14,7 +14,6 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 return static function (ContainerConfigurator $containerConfigurator): void {
     // get parameters
     $parameters = $containerConfigurator->parameters();
-    $services = $containerConfigurator->services();
 
     // Define what rule sets will be applied
     $containerConfigurator->import(SetList::DEAD_CODE);
@@ -23,9 +22,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->import(SetList::CODE_QUALITY);
     $containerConfigurator->import(SetList::CODING_STYLE);
     $containerConfigurator->import(SetList::TYPE_DECLARATION);
-    $containerConfigurator->import(SetList::PHP_71);
-    $containerConfigurator->import(SetList::PHP_72);
-    $containerConfigurator->import(SetList::PHP_74);
+
+    $parameters->set(Option::SKIP, []);
+
+    $parameters->set(Option::PATHS, [__DIR__ . '/app']);
 
     $parameters->set(Option::PHPSTAN_FOR_RECTOR_PATH, getcwd() . '/phpstan.neon');
 };
