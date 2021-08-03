@@ -27,14 +27,5 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->import(SetList::PHP_72);
     $containerConfigurator->import(SetList::PHP_74);
 
-    // PostRector
-    $services->set(ClassRenamingPostRector::class);
-    $services->set(NameImportingPostRector::class);
-
-    // Privatization
-    $services->set(ChangeGlobalVariablesToPropertiesRector::class);
-    $services->set(ChangeLocalPropertyToVariableRector::class);
-    $services->set(PrivatizeLocalGetterToPropertyRector::class);
-
     $parameters->set(Option::PHPSTAN_FOR_RECTOR_PATH, getcwd() . '/phpstan.neon');
 };
