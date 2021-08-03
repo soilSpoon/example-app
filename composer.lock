@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fcd0314735fc82c321e7c31b49bdb0fb",
+    "content-hash": "3317252e70a309fb113293487b92bace",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -938,16 +938,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.52.0",
+            "version": "v8.53.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "8fe9877d52e25f8aed36c51734e5a8510be967e6"
+                "reference": "4b2e3e7317da82dd9f5b88d477abd93444748b43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/8fe9877d52e25f8aed36c51734e5a8510be967e6",
-                "reference": "8fe9877d52e25f8aed36c51734e5a8510be967e6",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/4b2e3e7317da82dd9f5b88d477abd93444748b43",
+                "reference": "4b2e3e7317da82dd9f5b88d477abd93444748b43",
                 "shasum": ""
             },
             "require": {
@@ -1020,7 +1020,7 @@
                 "illuminate/view": "self.version"
             },
             "require-dev": {
-                "aws/aws-sdk-php": "^3.155",
+                "aws/aws-sdk-php": "^3.186.4",
                 "doctrine/dbal": "^2.6|^3.0",
                 "filp/whoops": "^2.8",
                 "guzzlehttp/guzzle": "^6.5.5|^7.0.1",
@@ -1033,7 +1033,7 @@
                 "symfony/cache": "^5.1.4"
             },
             "suggest": {
-                "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage and SES mail driver (^3.155).",
+                "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage and SES mail driver (^3.186.4).",
                 "brianium/paratest": "Required to run tests in parallel (^6.0).",
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6|^3.0).",
                 "ext-ftp": "Required to use the Flysystem FTP driver.",
@@ -1102,7 +1102,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-07-27T13:03:29+00:00"
+            "time": "2021-08-03T14:36:33+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -7467,16 +7467,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.93",
+            "version": "0.12.94",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "7b7602f05d340ffa418c59299f8c053ac6c3e7ea"
+                "reference": "3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/7b7602f05d340ffa418c59299f8c053ac6c3e7ea",
-                "reference": "7b7602f05d340ffa418c59299f8c053ac6c3e7ea",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6",
+                "reference": "3d0ba4c198a24e3c3fc489f3ec6ac9612c4be5d6",
                 "shasum": ""
             },
             "require": {
@@ -7507,7 +7507,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.93"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.94"
             },
             "funding": [
                 {
@@ -7527,7 +7527,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-20T10:49:53+00:00"
+            "time": "2021-07-30T09:05:27+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -8002,21 +8002,21 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.11.42",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "3bcd73b480947aad39a832578fa95dc039206dac"
+                "reference": "306138dcb30efdb87546bc563c18303e463d6000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/3bcd73b480947aad39a832578fa95dc039206dac",
-                "reference": "3bcd73b480947aad39a832578fa95dc039206dac",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/306138dcb30efdb87546bc563c18303e463d6000",
+                "reference": "306138dcb30efdb87546bc563c18303e463d6000",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1|^8.0",
-                "phpstan/phpstan": "0.12.93"
+                "phpstan/phpstan": "0.12.94"
             },
             "conflict": {
                 "phpstan/phpdoc-parser": "<=0.5.3",
@@ -8028,6 +8028,7 @@
                 "rector/rector-prefixed": "*",
                 "rector/rector-symfony": "*"
             },
+            "default-branch": true,
             "bin": [
                 "bin/rector"
             ],
@@ -8049,7 +8050,7 @@
             "description": "Prefixed and PHP 7.1 downgraded version of rector/rector",
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.11.42"
+                "source": "https://github.com/rectorphp/rector/tree/main"
             },
             "funding": [
                 {
@@ -8057,7 +8058,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-02T20:05:35+00:00"
+            "time": "2021-08-03T17:22:27+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -8912,7 +8913,6 @@
                     "type": "github"
                 }
             ],
-            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
@@ -9251,7 +9251,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "rector/rector": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
