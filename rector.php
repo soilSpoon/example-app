@@ -16,12 +16,12 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();
 
     // Define what rule sets will be applied
-    $containerConfigurator->import(SetList::DEAD_CODE);
-    $containerConfigurator->import(SetList::EARLY_RETURN);
-    $containerConfigurator->import(SetList::ORDER);
-    $containerConfigurator->import(SetList::CODE_QUALITY);
-    $containerConfigurator->import(SetList::CODING_STYLE);
-    $containerConfigurator->import(SetList::TYPE_DECLARATION);
+    // $containerConfigurator->import(SetList::DEAD_CODE);
+    // $containerConfigurator->import(SetList::EARLY_RETURN);
+    // $containerConfigurator->import(SetList::ORDER);
+    // $containerConfigurator->import(SetList::CODE_QUALITY);
+    // $containerConfigurator->import(SetList::CODING_STYLE);
+    // $containerConfigurator->import(SetList::TYPE_DECLARATION);
 
     $parameters->set(Option::SKIP, []);
 
